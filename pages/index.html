@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Page Title</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    </head>
+
+    <body>
+
+        <div>
+            <h1>Find all teachers</h1>
+            <button onclick="findAllTeachersFunc()">Find all teachers</button>
+        </div>
+        <hr>
+
+        <h1>Find teacher by salary</h1>
+        <input id="maxSalaryInput" placeholder="Max Salary" type="text" /> <br />
+        <button onclick="findTeachersByInput()">Find</button>
+        <hr />
+
+        <h1>Add teacher</h1>
+        <form name="add-teacher" action="/add-teacher" method="post">
+            <input name="fullName" placeholder="name" type="text" /> <br />
+            <input name="id" placeholder="id" type="text" /><br />
+            <input name="salary" placeholder="salary" type="text" /><br />
+            <input name="profession" placeholder="profession" type="text" /><br />
+            <input type="submit" value="Add Teacher" />
+        </form>
+
+        <script src='script.js'></script>
+    </body>
+
+</html>
